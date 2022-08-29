@@ -1,13 +1,12 @@
 fun main(){
-     val collection : List<String> = listOf("Maze","Mr.","More")
-     
+     val collection : List<String> = listOf("abc","ab","a")
+     var count= 3
      for(item in collection){
-         if(item.startsWith("M") && (item.contains("r"))){
-             println(item)
-             break
+         if(item.length>=count){
+             println("true")
          }
          else{
-             println("default result")
+             println("false")
          }
      }
 }
