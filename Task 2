@@ -1,0 +1,25 @@
+fun main(args: Array<String>) {
+
+    var res=
+    var arrat=copy(args)
+   for(i in 1..args.size-1)
+    {
+        if(args[i]=="*")
+        {
+            res*=args[i+1].toDouble()
+        }
+        else if(args[i]=="/")
+        {
+          res/=args[i+1].toDouble()  
+        }
+        else if(args[i]=="+")
+        {
+          res+=args[i+1].toDouble()  
+        }
+        else if(args[i]=="/")
+        {
+          res-=args[i+1].toDouble()  
+        }
+    }
+    print("$res")
+}
