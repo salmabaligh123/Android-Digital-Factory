@@ -1,0 +1,38 @@
+abstract class shape {
+    abstract fun area(): Double
+}
+
+class circle (val radius: Double):shape(){
+    
+    override fun area(): Double{
+        return 2*Math.PI *radius
+    }
+}
+
+class rectangle (val length: Double,val width: Double):shape(){
+
+    override fun area(): Double{
+        return length * width
+    }
+}
+
+class square (val side: Double):shape(){
+    
+    override fun area(): Double{
+        return side*side
+    }
+}
+
+fun main(){
+    
+    val r = rectangle(10.0,5.0)
+    val c = circle(5.0)
+    val s = square(4.0)
+    
+    println("Area of Rectangle = ") 
+    println(r.area())
+    println("Area of Circle = ")
+     println(c.area())
+    println("Area of Square = ")
+     println(s.area())
+}
