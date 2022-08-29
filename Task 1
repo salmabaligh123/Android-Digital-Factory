@@ -1,0 +1,21 @@
+fun main(args: Array<String>) {
+     val num1 = args[0].toDouble()
+     val op = args[1]
+     val num2 = args[2].toDouble()
+     if (op == "+"){
+         val goal = num1 + num2
+         println("The Sum = $goal")
+     }
+     else if(op == "-"){
+         val goal = num1 - num2
+         println("The Subtract = $goal")
+     }
+     else if(op == "*"){
+         val goal = num1 * num2
+         println("The Multiplication = $goal")
+     }
+     else if(op == "/"){
+         val goal = num1 / num2
+         println("The Division = $goal") 
+     }
+     }
