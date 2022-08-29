@@ -2,9 +2,12 @@ fun main(){
      val collection : List<String> = listOf("Maze","Mr.","More")
      
      for(item in collection){
-         if(item.startsWith("M") && ("r" in item)){
+         if(item.startsWith("M") && (item.contains("r"))){
              println(item)
              break
+         }
+         else{
+             println("default result")
          }
      }
 }
