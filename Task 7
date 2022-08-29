@@ -1,12 +1,12 @@
 fun main(){
-     val collection : List<String> = listOf("abc","ab","a")
-     var count= 3
+     val collection : List<String> = listOf("a","Ma","M")
+     
      for(item in collection){
-         if(item.length>=count){
-             println("true")
-         }
-         else{
-             println("false")
+         if(item.startsWith("M") && (item.contains("a"))){
+             val index = collection.indexOf(item)-1
+             val ch = collection.get(index)
+             println(ch)
+             break
          }
      }
 }
