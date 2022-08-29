@@ -1,0 +1,93 @@
+ var new_array = args.toMutableList()
+     var i = 0
+     if(new_array.size == 1)
+     {
+          println("The Total is $new_array[0]")
+     }
+     else while (i < new_array.size) 
+    		{
+                if(new_array.size == 1)
+                {
+                    println("The Total is $new_array[0]")
+                }
+                if(new_array[i] == "*")
+                {
+                	val current = new_array[i-1].toDouble() * new_array[i+1].toDouble()
+                    
+                    new_array.removeAt(i)
+                    new_array.removeAt(i)
+                    new_array.removeAt(i-1)
+                    new_array.add(i-1, current.toString())
+                    
+                    println(new_array)
+                    i = 0
+                }
+            	i++
+        	}
+            i = 0
+            while (i < new_array.size) 
+    		{
+                if(new_array.size == 1)
+                {
+                    println("The Total is $new_array[0]")
+                }
+                if(new_array[i] == "/")
+                {
+                	val current = new_array[i-1].toDouble() / new_array[i+1].toDouble()
+                    
+                    new_array.removeAt(i)
+                    new_array.removeAt(i)
+                    new_array.removeAt(i-1)
+                    new_array.add(i-1, current.toString())
+                    
+                    println(new_array)
+                    i = 0
+                }
+            	i++
+        	}
+            i = 0
+            while (i < new_array.size) 
+    		{
+                if(new_array.size == 1)
+                {
+                    println("The Total is $new_array[0]")
+                }
+                if(new_array[i] == "+")
+                {
+                	val current = new_array[i-1].toDouble() + new_array[i+1].toDouble()
+                    
+                    new_array.removeAt(i)
+                    new_array.removeAt(i)
+                    new_array.removeAt(i-1)
+                    new_array.add(i-1, current.toString())
+                    
+                    println(new_array)
+                    i = 0
+                }
+            	i++
+        	}
+            i = 0
+            while (i < new_array.size) 
+    		{
+                if(new_array.size == 1)
+                {
+                    println("The Total is $new_array[0]")
+                }
+                if(new_array[i] == "-")
+                {
+                	val current = new_array[i-1].toDouble() - new_array[i+1].toDouble()
+                    
+                    new_array.removeAt(i)
+                    new_array.removeAt(i)
+                    new_array.removeAt(i-1)
+                    new_array.add(i-1, current.toString())
+                    
+                    println(new_array)
+                    i = 0
+                }
+            	i++
+        	}
+            
+            println("The Total is " + new_array[0])
+            
+}
