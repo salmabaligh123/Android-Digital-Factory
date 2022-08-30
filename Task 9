@@ -1,0 +1,7 @@
+fun main(){
+     val collection : List<String> = listOf("a","abc","ab")
+     
+     for(item in collection){
+         println (item.length)
+}
+}
