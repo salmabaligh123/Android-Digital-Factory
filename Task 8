@@ -1,0 +1,9 @@
+fun main(){
+     val collection : List<String> = listOf("a","abc","ab")
+     var count=3
+     for(item in collection){
+         if(item.length==count){
+          println(item)
+         }
+            }
+}
